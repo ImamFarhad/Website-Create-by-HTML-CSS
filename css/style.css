@@ -1,0 +1,900 @@
+/* Common CSS */
+
+.box {
+  display: flex;
+  flex-direction: row;
+}
+
+.common-button a {
+  background: #E5745D;
+  padding: 21px 39px;
+  font-family: "Jost", "sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+
+}
+
+.common-button a::after {
+  position: absolute;
+  width: 95%;
+  height: 88%;
+  border: 2px solid white;
+  background: transparent;
+  left: 5px;
+  top: 4px;
+  content: "";
+}
+
+.common-button {
+  margin-top: 50px;
+}
+
+
+
+.title h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Vollkorn", serif;
+  color: #E5745D;
+  text-align: center;
+  position: relative;
+}
+
+.title h4::after {
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background: #E5745D;
+  top: 8px;
+  left: 39%;
+  content: '';
+}
+
+.title h4::before {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #E5745D;
+  border-radius: 50%;
+  top: 5px;
+  left: 43%;
+  content: '';
+}
+
+.title h2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Vollkorn", serif;
+  color: #00413D;
+  width: 517px;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.Services .title {
+  padding: 100px 100px 0px;
+}
+
+/* Common CSS */
+
+/* Navber Design Start */
+.navbar {
+  padding: 18px 0;
+
+}
+
+.navbar-nav {
+  gap: 50px;
+}
+
+.nav-link {
+  color: #00413D;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+
+
+
+}
+
+.nevber-button a {
+  background: #E5745D;
+  padding: 21px 39px;
+  font-family: "Jost", "sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+
+}
+
+.nevber-button a::after {
+  position: absolute;
+  width: 180px;
+  height: 60px;
+  border: 2px solid white;
+  background: transparent;
+  left: 4px;
+  top: 4px;
+  content: "";
+}
+
+
+/* Navber Design End */
+/* Banner Design Start */
+
+.banner {
+  width: 100%;
+  background: #00413D;
+  padding-top: 221px;
+  padding-bottom: 190px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.banner-overlay {
+
+  width: 40%;
+  height: 50%;
+  background-image: url(../images/farhad.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  right: -50%;
+  position: absolute;
+  transition: .8s ease all;
+  z-index: 3;
+  border-radius: 5%;
+  z-index: -1;
+  margin: 10% 20px;
+}
+
+.banner:hover .banner-overlay {
+  right: 0px;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 90px;
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+
+}
+
+.banner h1 span {
+  display: block;
+}
+
+.banner p {
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  color: #FFFFFF80;
+  line-height: 30px;
+  font-weight: 400;
+  width: 670px;
+}
+
+.banner p span {
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+/* Banner Design End */
+/* Services Design Start */
+.Services {
+  padding: 220px 200px;
+}
+
+.Services .card {
+  padding: 50px 30px;
+  border: none;
+  width: 100% !important;
+  -webkit-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+
+}
+
+.Services .card .card-body {
+  padding: 0;
+}
+
+.Services .card img {
+  width: 20%;
+  padding-bottom: 20px;
+}
+
+.Services .card i {
+  font-size: 20px;
+  color: #00413D;
+}
+
+.Services .card i:hover {
+  font-size: 20px;
+  color: #E5745D;
+
+}
+
+.Services .card-title {
+  color: #00413D;
+  font-size: 24px;
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+}
+
+.Services .card-text {
+  color: #00413D;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  width: 200px;
+}
+
+/* Services Design End  */
+/* About Design Start  */
+.about .box {
+  column-gap: 15px;
+}
+
+.box .about-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about .title {
+  padding: 30px;
+
+}
+
+.about .title h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Vollkorn", serif;
+  color: #E5745D;
+  text-align: left;
+  padding-left: 55px;
+  position: relative;
+}
+
+.about .title h2 {
+  font-size: 45px;
+  font-weight: 500;
+  font-family: "Vollkorn", serif;
+  color: #00413D;
+  width: 530px;
+  margin: auto;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.about .title h4::after {
+  position: absolute;
+  width: 45px;
+  height: 1px;
+  background: #E5745D;
+  top: 8px;
+  left: 0%;
+  content: '';
+}
+
+.about .title h4::before {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #E5745D;
+  border-radius: 50%;
+  top: 5px;
+  left: 9%;
+  content: '';
+}
+
+.about .title p {
+  line-height: 26px;
+  font-weight: 400;
+  font-family: 'Jost';
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #00413D;
+  font-size: 16px;
+}
+
+.about .nevber-button {
+  margin-top: 50px;
+}
+
+/* About Design End  */
+/* Progress Design Start */
+.progress-ber {
+  width: 100%;
+  height: 282px;
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+
+}
+
+.progress-ber h5 {
+  color: #00413D;
+  font-size: 24px;
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+  padding-top: 24px;
+}
+
+.progress-ber .progress-box {
+  width: 167px;
+  height: 167px;
+  border: 8px solid #E5745D;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.progress-box h6 {
+  color: #00413D;
+  font-size: 30px;
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+  padding-top: 24px;
+}
+
+/* Progress Design End  */
+/* project Design start  */
+.project .title h2 {
+  margin: 0;
+}
+
+.project .title h4::before {
+  left: 8%;
+}
+
+.project .box {
+  justify-content: space-between;
+}
+
+.project .icon i {
+  background: #E5745D;
+  font-size: 16px;
+  color: white;
+  padding: 15px;
+}
+
+.project .icon i:hover {
+  padding: 15px;
+  background: white;
+  color: #E5745D;
+  border: 1px solid #E5745D;
+  transition: .5s;
+}
+
+.project-card {
+  border: none !important;
+  width: 100% !important;
+  -webkit-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+
+}
+
+.project-card .card-body h3 {
+  color: #E5745D;
+  font-family: "Vollkorn", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.project-card .card-body .card-title {
+  width: 300px;
+  font-family: "Vollkorn", serif;
+  color: #00413D;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.project-card .card-body .card-text {
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.project-card .card-body .project-card-icon {
+  display: flex;
+  column-gap: 6px;
+  justify-content: start;
+  align-items: center;
+}
+
+.project-card .card-body .project-card-icon a {
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.project-card .card-body .project-card-icon a:hover {
+  color: #E5745D;
+}
+
+.project-card .card-body .project-card-icon i {
+  line-height: 26px;
+}
+
+.project-card .card-body .project-card-icon i:hover {
+  color: #E5745D;
+}
+
+.project .nevber-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project .nevber-button {
+  padding-bottom: 30px;
+}
+
+.project .nevber-button a::after {
+  position: absolute;
+  width: 97%;
+  height: 60px;
+  border: 2px solid white;
+  background: transparent;
+  left: 2px;
+  top: 5px;
+  content: "";
+}
+
+/* project Design End  */
+
+
+/*----------- Porfolio Design Start ------------ */
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio .title h4 {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Vollkorn", serif;
+  color: #E5745D;
+  text-align: center;
+  position: relative;
+}
+
+.portfolio .title h2 {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: "Vollkorn", serif;
+  color: #00413D;
+  width: 517px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.portfolio .title h4::after {
+  left: 42%;
+}
+
+.portfolio .title h4::before {
+  left: 46%;
+}
+
+.portfolio-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-menu ul {
+  margin-top: -50px;
+  display: flex;
+  list-style: none;
+
+}
+
+.portfolio-menu ul li {
+  font-family: "Vollkorn", serif;
+  margin: 25px;
+  color: #00413D;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  position: relative;
+  cursor: pointer;
+
+}
+
+.portfolio-menu ul li::after {
+  position: absolute;
+  width: 0;
+  height: 15%;
+  background: #E5745D;
+  top: 24px;
+  left: 0;
+  content: '';
+  transition: .5s;
+}
+
+.portfolio-menu ul li:hover::after {
+  width: 100%;
+}
+
+.portfolio .card {
+  background-image: url(../images/portfolio1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  position: relative;
+  border: 0px;
+  border-radius: 0px;
+  transition: .4s;
+}
+
+.portfolio .card:hover {
+  background-image: url(../images/portfolio2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.portfolio .card .card-body {
+  background: #00413D;
+  margin-top: 420px;
+
+}
+
+.portfolio .card .card-body .card-title {
+  font-family: "Vollkorn", serif;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.portfolio .card .card-body .card-text {
+  font-family: "Jost", sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.portfolio .badge {
+  width: 70px;
+  height: 70px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  opacity: 0;
+  transition: .4s;
+}
+
+.portfolio .card:hover .badge {
+  opacity: 1;
+}
+
+.portfolio .badge i {
+  color: #E5745D;
+  font-size: 20px;
+}
+
+/*----------- Porfolio Design End -------------- */
+/*----------- Testmonial Design Start -------------- */
+
+.testimonial{
+  padding: 100px 0px;
+}
+
+
+.testimonial .title h4 {
+  text-align: center;
+}
+
+.testimonial .title h2 {
+  text-align: center;
+}
+
+.testimonial .title h4::after {
+  width: 37px;
+  left: 41%;
+}
+
+.testimonial .title h4::before {
+  left: 44%;
+}
+
+.testimonial .test-card{
+  width: 100%;
+  padding: 30px 40px;
+  background: #F9F4F1;
+  -webkit-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  border-top: 8px solid #E5745D;
+}
+
+.testimonial .test-card p{
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  width: 449px;
+}
+.testimonial .test{
+  position: relative;
+}
+.testimonial .test-img {
+  position: absolute;
+  bottom: -30px;
+  left: 90px;
+  z-index: -1;
+}
+.testimonial .box{
+  padding: 25px 60px;
+  align-items: center;
+  column-gap: 30px;
+}
+.testimonial .testimonial-text h4{
+  font-family: "Vollkorn", serif;
+  color: #00413D;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+.testimonial .testimonial-text p{
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+.testimonial .testimonial-text ul{
+  display: flex;
+  list-style: none;
+  color: #FF9F3F;
+
+}
+/*----------- Testmonial Design End -------------- */
+/*----------- Contact Design End -------------- */
+.contact{
+  padding: 110px 0px;
+}
+.contact .title h4{
+  padding-left: 70px;
+  margin: 0px;
+}
+.contact .title h4::after {
+  left: 0%;
+}
+.contact .title h4::before {
+  left: 7%;
+}
+.contact .title h2{
+  text-align: start;
+  padding-top: 10px;
+  margin: 0px;
+}
+
+.contact input{
+  width: 44% ;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid #00413D1A;
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+}
+
+.contact input::placeholder{
+  font-family: "Vollkorn", serif;
+  color: #00413D;
+  font-size: 18px;
+  font-weight: 400;
+}
+.contact .last-input{
+  width: 100%;
+}
+
+.contact .title .contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  padding-bottom: 50px;
+}
+
+.contact .nevber-button a::after {
+  width: 93%;
+}
+
+/*----------- Contact Design End -------------- */
+/*----------- Blog Design End -------------- */
+.blog{
+  padding: 100px 0px;
+}
+
+.blog .title h4 {
+  text-align: center;
+  padding-left: 0px;
+}
+.blog  .title h2 {
+  text-align: center;
+}
+.blog .title h4::after {
+  left: 40%;
+}
+.blog .title h4::before {
+  left: 44%;
+}
+.blog .card-body{
+  -webkit-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 16px -10px rgba(0, 0, 0, 0.75);
+  border-top: 8px solid #E5745D;
+  border: 0px;
+
+}
+.blog .card-body .card-subtext{
+  display: flex;
+  justify-content: space-between;
+}
+.blog .card-body .card-subtext h5{
+  font-family: "Jost", sans-serif;
+  color: #E5745D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.blog .card-body .card-subtext p{
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.blog .card-body h5{
+  font-family: "Vollkorn", serif;
+  color: #00413D;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.blog .card-body p{
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.blog .card-body .blog-btn{
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.blog .card-body .blog-btn a{
+  background: white;
+  padding: 0px;
+  border: none;
+  color: #E5745D;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.blog .card-body .blog-btn i{
+  margin-top: 3px;
+  color: #E5745D;
+  cursor: pointer;
+}
+.blog .card-body .blog-btn:hover a{
+  color: #00413D;
+  transition: .5s;
+}
+.blog .card-body .blog-btn:hover i{
+  color: #00413D;
+  transition: .5s;
+}
+
+/*----------- Blog Design End -------------- */
+/*----------- Footer Design Start -------------- */
+
+.footer{
+  padding: 80px 0px;
+  text-align: center;
+  border-bottom: 2px solid #00413D;
+}
+.footer .footer-menu ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  padding: 60px 0px;
+}
+
+.footer .footer-menu ul li{
+  padding-right: 33px;
+  border-right: 2px solid #00413D;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  color: #00413D;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.footer .footer-menu ul li:last-child{
+  border: none;
+}
+.footer .footer-social-icon ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+.footer .footer-social-icon ul li i{
+  background: #00413D;
+  color: white;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 2px solid #00413D;
+  transition: .5s;
+}
+.footer .footer-social-icon ul li i:hover{
+  background: white;
+  color: #00413D;
+  transition: .5s;
+}
+.footer .footer-card p{
+  padding: 30px 0;
+}
+/*----------- Footer Design End -------------- */
+
+.copyright p{
+  padding: 30px 0px;
+  text-align: center;
+  color: #00413D;
+  font-size: 20px;
+  font-weight: 500;
+}
